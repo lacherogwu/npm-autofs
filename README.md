@@ -78,7 +78,7 @@ Add the following comments in the file you want to write
 The second parameter you pass to the function will be an array with lines of code to write between these tags
 
 ```
-import { generateIndex } from 'autofs';
+import { writeInFile } from 'autofs';
 
 await writeInFile('./test/writeInsideMe.js', [`const alibaba = 123;`, `const testMe = 'Testing';`]);
 ```
