@@ -1,11 +1,11 @@
-# npm-jsfilegen
+# npm-autofs
 
-Generate file from an object
+Automations with file system
 
 ## Example
 
 ```
-import { generateFile } from 'jsfilegen';
+import { generateFile } from 'autofs';
 
 const buildFileObject = {
     imports: [

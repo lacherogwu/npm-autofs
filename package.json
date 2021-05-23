@@ -1,7 +1,7 @@
 {
-	"name": "jsfilegen",
+	"name": "autofs",
 	"version": "0.2.0",
-	"description": "Generate file from an object",
+	"description": "Automations with file system",
 	"main": "src/index.js",
 	"type": "module",
 	"scripts": {
@@ -9,7 +9,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/lacherogwu/npm-fileGen.git"
+		"url": "git+https://github.com/lacherogwu/npm-autofs.git"
 	},
 	"keywords": [
 		"generate",
@@ -18,12 +18,12 @@
 		"genfile",
 		"jsgenfile"
 	],
-	"author": "LacheRo",
+	"author": "LacheRo`",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/lacherogwu/npm-fileGen/issues"
+		"url": "https://github.com/lacherogwu/npm-autofs/issues"
 	},
-	"homepage": "https://github.com/lacherogwu/npm-fileGen#readme",
+	"homepage": "https://github.com/lacherogwu/npm-autofs#readme",
 	"dependencies": {
 		"glob": "^7.1.7"
 	}
