@@ -1,11 +1,11 @@
 {
 	"name": "jsfilegen",
-	"version": "0.1.8",
+	"version": "0.2.0",
 	"description": "Generate file from an object",
 	"main": "src/index.js",
 	"type": "module",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "node test/index.js"
 	},
 	"repository": {
 		"type": "git",
@@ -23,5 +23,8 @@
 	"bugs": {
 		"url": "https://github.com/lacherogwu/npm-fileGen/issues"
 	},
-	"homepage": "https://github.com/lacherogwu/npm-fileGen#readme"
+	"homepage": "https://github.com/lacherogwu/npm-fileGen#readme",
+	"dependencies": {
+		"glob": "^7.1.7"
+	}
 }
