@@ -1,0 +1,27 @@
+{
+	"name": "jsfilegen",
+	"version": "0.1.2",
+	"description": "Generate file from an object",
+	"main": "src/index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lacherogwu/npm-fileGen.git"
+	},
+	"keywords": [
+		"generate",
+		"file",
+		"generate-file",
+		"genfile",
+		"jsgenfile"
+	],
+	"author": "LacheRo",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/lacherogwu/npm-fileGen/issues"
+	},
+	"homepage": "https://github.com/lacherogwu/npm-fileGen#readme"
+}
