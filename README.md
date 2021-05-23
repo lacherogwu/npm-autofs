@@ -34,8 +34,9 @@ const result = await generateFile(path, buildFileObject);
 console.log(result);
 ```
 
+### Console log from above code
+
 ```
-// Console log from code above
 import 'dotenv/config';
 import dotenv from 'dotenv';
 
