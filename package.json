@@ -1,6 +1,6 @@
 {
 	"name": "autofs",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "Automations with file system",
 	"main": "src/index.js",
 	"type": "module",
@@ -16,7 +16,15 @@
 		"file",
 		"generate-file",
 		"genfile",
-		"jsgenfile"
+		"jsgenfile",
+		"dynamic",
+		"automation",
+		"automate",
+		"autofs",
+		"dynamicfs",
+		"write",
+		"write-in-file",
+		"generate-dynamic"
 	],
 	"author": "LacheRo`",
 	"license": "MIT",
