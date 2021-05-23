@@ -1,2 +1,56 @@
 # npm-fileGen
-Generate file form an object
+
+Generate file from an object
+
+## Example
+
+```
+import { generateFile } from 'jsfilegen';
+
+const buildFileObject = {
+    imports: [
+        { path: 'dotenv/config' }
+    ],
+    body: [],
+    exports: [
+        { name: 'doUsername', as: 'getUsername' },
+        { name: 'getSomething' }
+    ],
+    defaultExports: {
+        nodeEnv: 'process.env.NODE_ENV',
+        port: 'process.env.PORT',
+        host: 'process.env.HOST',
+        apiKey: 'process.env.API_KEY',
+        mailshrimpApiKey: 'process.env.MAILSHRIMP_API_KEY',
+        token: 'process.env.TOKEN',
+        id: 'process.env.ID',
+        username: 'process.env.USERNAME',
+        doSomethingAmazing: 'process.env.DO_SOMETHING_AMAZING',
+    }
+};
+
+const result = await generateFile(path, buildFileObject);
+console.log(result);
+```
+
+```
+// Console log from code above
+import 'dotenv/config';
+
+export {
+        doUsername as getUsername,
+        getSomething
+};
+
+export default {
+        nodeEnv: process.env.NODE_ENV,
+        port: process.env.PORT,
+        host: process.env.HOST,
+        apiKey: process.env.API_KEY,
+        mailshrimpApiKey: process.env.MAILSHRIMP_API_KEY,
+        token: process.env.TOKEN,
+        id: process.env.ID,
+        username: process.env.USERNAME,
+        doSomethingAmazing: process.env.DO_SOMETHING_AMAZING
+};
+```
