@@ -1,4 +1,4 @@
-# npm-fileGen
+# npm-jsfilegen
 
 Generate file from an object
 
