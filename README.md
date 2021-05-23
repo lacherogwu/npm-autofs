@@ -2,7 +2,9 @@
 
 Automations with file system
 
-## Example
+## Examples
+
+### generateFile
 
 ```
 import { generateFile } from 'autofs';
@@ -56,4 +58,27 @@ export default {
         username: process.env.USERNAME,
         doSomethingAmazing: process.env.DO_SOMETHING_AMAZING
 };
+```
+
+### generateIndex
+
+```
+import { generateIndex } from 'autofs';
+
+await generateIndex('./test/components', true);
+```
+
+### writeInFile
+
+Add the following comments in the file you want to write
+
+- // ### START DYNAMIC CONTENT ###
+- // ### END DYNAMIC CONTENT ###
+
+The second parameter you pass to the function will be an array with lines of code to write between these tags
+
+```
+import { generateIndex } from 'autofs';
+
+await writeInFile('./test/writeInsideMe.js', [`const alibaba = 123;`, `const testMe = 'Testing';`]);
 ```
