@@ -9,7 +9,8 @@ import { generateFile } from 'jsfilegen';
 
 const buildFileObject = {
     imports: [
-        { path: 'dotenv/config' }
+        { path: 'dotenv/config' },
+        { name: 'dotenv', path: 'dotenv' }
     ],
     body: [],
     exports: [
@@ -26,7 +27,7 @@ const buildFileObject = {
         id: 'process.env.ID',
         username: 'process.env.USERNAME',
         doSomethingAmazing: 'process.env.DO_SOMETHING_AMAZING',
-    }
+    },
 };
 
 const result = await generateFile(path, buildFileObject);
@@ -36,6 +37,7 @@ console.log(result);
 ```
 // Console log from code above
 import 'dotenv/config';
+import dotenv from 'dotenv';
 
 export {
         doUsername as getUsername,
