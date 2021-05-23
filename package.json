@@ -1,6 +1,6 @@
 {
 	"name": "jsfilegen",
-	"version": "0.1.5",
+	"version": "0.1.6",
 	"description": "Generate file from an object",
 	"main": "src/index.js",
 	"type": "module",
